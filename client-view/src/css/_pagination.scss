@@ -1,0 +1,12 @@
+.pagination {
+    display: unset !important;
+    padding-left: 0;
+    margin: 0 !important;
+    border-radius: 4px;
+    float: right;
+}
+
+.pagination > .active > a {
+    background-color: #cecece !important;
+    border-color: #cecece !important;
+}

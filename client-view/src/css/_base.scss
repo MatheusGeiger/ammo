@@ -1,0 +1,76 @@
+body {
+    background-color: #FFF;
+    font-family: $font-family;
+}
+
+a {
+    cursor: pointer;
+}
+
+.text-react-blue {
+    color: $react-blue;
+}
+
+.bg-react-black {
+    background-color: $react-black;
+}
+
+.current-page {
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.logo{
+    background-image: url(/logo.jpg);
+    background-size: cover;
+    width: 116px;
+    height: 60px;
+    margin-top: -10px;
+}
+
+.header {
+    height: 60px;
+    vertical-align: middle;
+}
+
+.container {
+    padding-top: 15px;
+}
+
+.title-search-page{
+    background-color: #dae1e7;
+    padding: 10px;
+    border: 0.3px solid #cecece;
+    height: auto;
+
+    span{
+        color: #433e66;
+        font-size: 50px;
+        font-weight: 250;
+        padding: 10px 0 10px 10px;
+        display: block;
+    }
+}
+
+.title-products-finded{
+    border-bottom: 3px solid #dfbe7f;
+    text-align: center;
+    width: auto;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.end-page{
+    padding-top: 20px
+}
+
+@media screen and (max-width: 992px) {
+    .logo {
+        background-image: url(/logo.jpg);
+        background-size: cover;
+        width: 116px;
+        height: 60px;
+        margin-top: -10px;
+        margin: 0 auto;
+    }
+}

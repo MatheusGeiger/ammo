@@ -1,0 +1,95 @@
+
+.product-percentageDiscount {
+    text-decoration: line-through;
+    float: left;
+    color: #6d6e70;
+}
+
+.product-card{
+    border: 0.3px solid #cecece;
+    padding: 5px 21px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.images-product{
+    float: left;
+    width: 28%;
+    
+    img {
+        padding: 2px;
+    }
+}
+
+.content-card-description{
+    float: left;
+    width: 60%;
+    height: 80px;
+}
+
+.content-card-price{
+    font-size: 15px;
+    font-weight: 400;
+    float: right;
+    width: 12%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.product-name{
+    display: flex;
+    height: 40px;
+    align-items: flex-end;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.product-category{
+    height: 40px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #58585a;
+}
+
+@media screen and (max-width: 992px) {
+    .images-product {
+        float: left;
+        width: 100%;
+        max-height: 80px;
+        overflow: hidden;
+    }
+    .content-card-price {
+        float: right;
+        width: 34%;
+        height: 80px;
+    }
+    .content-card-description{
+        float: left;
+        height: 80px;
+        width: unset;
+    }
+    .product-card{
+        min-height: 200px;
+    }
+    .container-product-images {
+        width: calc(80px * 4);
+        margin: 0 auto;
+    }
+    .select-items-page {
+        width: 30%;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .select-items-page {
+        width: 100%;
+        float: unset;
+    }
+    .pagination{
+        width: 100%;
+        margin-top: 5px !important;
+    }
+}
