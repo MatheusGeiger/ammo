@@ -84,7 +84,7 @@ const jsonUpdate = {
         },
         "price": {
             "$id": "#/properties/price",
-            "type": "integer",
+            "type": "number",
             "title": "The Price Schema",
             "minLength": 1,
             "default": 0,

@@ -72,12 +72,12 @@ const jsonAdd = {
         },
         "price": {
             "$id": "#/properties/price",
-            "type": "integer",
+            "type": "number",
             "title": "The Price Schema",
             "minLength": 1,
-            "default": 0,
             "examples": [
-                981
+                981.98,
+                90
             ]
         },
         "percentageDiscount": {

@@ -96,7 +96,7 @@ class EditProductForm extends Component {
                     </div>
                     <div className="form-group">
                         <label htmlFor="price">Price</label>
-                        <input type="number" className="form-control"  min="0" name="price" autoFocus onChange={this.onChangeField} value={this.state.fields.price}/>
+                        <input type="number" className="form-control"  min="0" step="any" name="price" autoFocus onChange={this.onChangeField} value={this.state.fields.price}/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="percentageDiscount">Price Discount</label>

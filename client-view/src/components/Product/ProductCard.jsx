@@ -22,10 +22,10 @@ const ProductCard = (props) => {
         </div>
         <div className="content-card-price">
           {
-            percentageDiscount > 1 ? <div className="product-percentageDiscount">R$ {price} </div> : <div className="product-price">R$ {price} </div>
+            percentageDiscount > 1 ? <div className="product-percentageDiscount">R$ {price} </div> : <div className="product-price">R$ {price.toFixed(2)} </div>
           }
           {
-            percentageDiscount > 1 ? <div className="product-price"> &nbsp; por R$ {Math.round(price - price * percentageDiscount / 100, 2)}</div> : ''
+            percentageDiscount > 1 ? <div className="product-price"> &nbsp; por R$ {(price - price * percentageDiscount / 100).toFixed(2)}</div> : ''
           }
         </div>
       </div>
