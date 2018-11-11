@@ -38,11 +38,9 @@ class Pagination extends Component {
         if (page < 1 || page > pager.totalPages) {
             return;
         }
-        console.log(products);
 
         pager = this.getPager(products.length, page, pageSize);
         var currentProducts = products.slice(pager.startIndex, pager.endIndex + 1);
-        console.log(currentProducts);
         this.setState({ pager: pager });
 
         this.props.onChangePage(currentProducts);

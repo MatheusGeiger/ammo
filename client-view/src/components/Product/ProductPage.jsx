@@ -22,6 +22,7 @@ class ProductPage extends Component {
         this.onChangeItemsPerPage = this.onChangeItemsPerPage.bind(this);
         this.onCleanFindProducts = this.onCleanFindProducts.bind(this);
         this.onSearchTitleChanged = this.onSearchTitleChanged.bind(this);
+        this.onKeyPressSearchTitle = this.onKeyPressSearchTitle.bind(this);
     }
 
     componentDidMount() {
@@ -40,6 +41,12 @@ class ProductPage extends Component {
                 console.log(error);
                 return;
             });
+    }
+
+    onKeyPressSearchTitle(event){
+        if (event.key === 'Enter'){
+            this.handleOnFindProducts();
+        }
     }
 
     onChangeItemsPerPage(event) {
@@ -107,7 +114,7 @@ class ProductPage extends Component {
                                 </button>
                             </span>
                             <input type="text" className="form-control input-search" placeholder="Procurar produto pelo título ..."
-                                value={this.state.titleSearch} onChange={this.onSearchTitleChanged} />
+                                value={this.state.titleSearch} onChange={this.onSearchTitleChanged} onKeyPress={this.onKeyPressSearchTitle}/>
                             <span className="input-group-btn">
                                 <button className="btn btn-light" type="button" onClick={this.onCleanFindProducts}>
                                     <i className="glyphicon glyphicon-remove"></i>
